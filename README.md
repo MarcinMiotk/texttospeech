@@ -15,5 +15,17 @@ TextToSpeech examples
 - Microsoft Speech Platform SDK 11  
 
 # API
+
+COM
 - CoCreateInstance https://msdn.microsoft.com/en-us/library/windows/desktop/ms686615(v=vs.85).aspx
+- CoInitialize https://msdn.microsoft.com/en-us/library/windows/desktop/ms678543(v=vs.85).aspx
+- CoUninitialize https://msdn.microsoft.com/en-us/library/windows/desktop/ms688715(v=vs.85).aspx
+
+Speech
+- Helper SpFindBestToken https://msdn.microsoft.com/en-us/library/ms717543(v=vs.85).aspx
+- ISpObjectToken https://msdn.microsoft.com/en-us/library/ms718134(v=vs.85).aspx
+- ISpVoice https://msdn.microsoft.com/en-us/library/ms719576(v=vs.85).aspx
+- ISpVoice::Speak https://msdn.microsoft.com/en-us/library/ms719820(v=vs.85).aspx
+- ISpVoice::SetVoice https://msdn.microsoft.com/en-us/library/ms719807(v=vs.85).aspx
+
 
