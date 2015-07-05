@@ -28,4 +28,5 @@ Speech
 - ISpVoice::Speak https://msdn.microsoft.com/en-us/library/ms719820(v=vs.85).aspx
 - ISpVoice::SetVoice https://msdn.microsoft.com/en-us/library/ms719807(v=vs.85).aspx
 
-
+Windows Regedit
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices
