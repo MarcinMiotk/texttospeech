@@ -3,6 +3,7 @@ TextToSpeech examples
 
 # Knowledge
 - Microsoft Speech Platform SDK 11 Documentation, Application-Level Interfaces
+- Text-to-speech tutorial from MSDN https://msdn.microsoft.com/en-us/library/ms720163(v=vs.85).aspx
 
 
 # Ivona voices
