@@ -16,7 +16,7 @@ TextToSpeech examples
 
 # API
 
-COM
+Component Object Model (COM)
 - CoCreateInstance https://msdn.microsoft.com/en-us/library/windows/desktop/ms686615(v=vs.85).aspx
 - CoInitialize https://msdn.microsoft.com/en-us/library/windows/desktop/ms678543(v=vs.85).aspx
 - CoUninitialize https://msdn.microsoft.com/en-us/library/windows/desktop/ms688715(v=vs.85).aspx
