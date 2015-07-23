@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "SayLibrary.h"
 
-SAYLIBRARY_API SayResult say(std::wstring language, std::wstring text)
+SAYLIBRARY_API SayResult say(const wchar_t *language, const wchar_t * text)
 {
 	ISpVoice *pVoice(NULL);
 	ISpObjectToken *cpToken(NULL);
@@ -15,10 +15,10 @@ SAYLIBRARY_API SayResult say(std::wstring language, std::wstring text)
 		// play
 
 		if (SUCCEEDED(CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_ALL, IID_ISpVoice, (void **)&pVoice))) {
-			if (SUCCEEDED(SpFindBestToken(SPCAT_VOICES, language.c_str(), L"", &cpToken))) {
+			if (SUCCEEDED(SpFindBestToken(SPCAT_VOICES, language, L"", &cpToken))) {
 				if (SUCCEEDED(pVoice->SetVoice(cpToken))) {
 					// speak
-					if (SUCCEEDED(pVoice->Speak(text.c_str(), 0, NULL))) {
+					if (SUCCEEDED(pVoice->Speak(text, 0, NULL))) {
 						result.success = true;
 						result.message = "Success";
 					}

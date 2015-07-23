@@ -15,4 +15,4 @@ struct SayResult{
 	char *message;
 };
 
-SAYLIBRARY_API SayResult say(std::wstring language, std::wstring text);
+SAYLIBRARY_API SayResult say(const wchar_t *language, const wchar_t * text);

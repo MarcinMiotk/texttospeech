@@ -32,7 +32,7 @@ JNIEXPORT jobject JNICALL Java_net_keinesorgen_tts_Tts_say(JNIEnv * env, jobject
 		wstring pLanguage = convertJStringToWchar(env, language);
 		wstring pText = convertJStringToWchar(env, text);
 
-		SayResult result = say(pLanguage, pText);
+		SayResult result = say(pLanguage.c_str(), pText.c_str());
 
 		return create(env, result.success, result.message);
 }
