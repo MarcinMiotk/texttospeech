@@ -4,15 +4,20 @@ package net.keinesorgen.tts;
  *
  */
 public class SayResult {
-
     private boolean success;
     private String message;
 
-    @Override
-    public String toString() {
-        return success + ", " + message;
+    public SayResult() {
     }
 
+    @Override
+    public String toString() {
+        return success+", "+message;
+    }
+
+    
+    
+    
     /**
      * @return the success
      */
@@ -40,4 +45,6 @@ public class SayResult {
     public void setMessage(String message) {
         this.message = message;
     }
+    
+    
 }

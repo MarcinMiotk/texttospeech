@@ -4,6 +4,5 @@ package net.keinesorgen.tts;
  *
  */
 public class Tts {
-    
-    public native SayResult say(String language, String text);
+    public native SayResult say(String language, String text) throws Exception;
 }

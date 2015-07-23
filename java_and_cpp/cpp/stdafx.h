@@ -13,9 +13,4 @@
 
 
 
-// SAPI
-#include <sapi.h>
-#include <sphelper.h>
-
-#include <iostream>
-#include <tchar.h>
+// TODO: reference additional headers your program requires here

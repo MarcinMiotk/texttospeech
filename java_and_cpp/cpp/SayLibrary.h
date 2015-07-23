@@ -10,9 +10,10 @@
 #define SAYLIBRARY_API __declspec(dllimport)
 #endif
 
-struct SayResult{
+struct SayResult {
 	bool success;
-	char *message;
+	char* message;
 };
 
-SAYLIBRARY_API SayResult say(const wchar_t *language, const wchar_t * text);
+
+SAYLIBRARY_API SayResult say(const wchar_t *language, const wchar_t *text);
